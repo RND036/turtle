@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Link to the intl-tel-input CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./details.css" type="text/css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Details</title>
+</head>
+<body>
+    <header>
+        <h1 class="mhead">Hikkaduwa Turtle Hatchery </h1>
+        <h2>Ticket Booking Center</h2>
+        <h2>Buy Tickets</h2>
+        
+      </header>
+      <body>
+          <h1>Enter Your Details</h1>
+          <div class="all">
+              <div class="all1">
+                  <section>
+                      <label for="input" class="text">Full Name</label><br>
+                      <input type="text" name="text" class="input" placeholder="Sam Johnathn" id="fullname">  
+                  </section>   
+                  <section class="allin">
+                  <label for="input" class="text">Email</label><br>
+                  <input type="text" name="text" class="input" placeholder="example@gmail.com" id="emailInput" >
+                  </section>
+              </div>
+              <div class="all2" >
+                  <section>
+                      <!--telephone input-->
+                      <label for="input" class="text">Telephone Number</label><br>
+                      <input type="tel" id="phoneInput" placeholder="Enter phone number" class="input" >
+                
+                  </section>
+                  <section class="allin" >
+                        <label for="input" class="text">Confirm Email</label><br>
+                        <input type="text" name="text" class="input" placeholder="example@gmail.com" id="emailInput">
+                  </section>
+              </div>
+              <div class="all3">
+                  <section>
+                      <table  id="sumtab">
+                          <tr><th>NAME</th><td id="name"></td></tr>
+                          <tr><th>TELEPHONE NUMBER</th><td id="telenum"></td></tr>
+                           <tr><th id="emailadd">EMAIL ADDRESS</th><td id="mail"></td></tr><tr><th>GENDER</th><td id="gender"></td></tr>
+                         
+                      </table>
+                  </section>
+              </div>
+          </div>
+          <section>
+              <div class="gender">
+          <label for="gender" >Gender</label><br>
+          <select id="geninpu" class="input">
+              <option value="" disabled selected>--select Gender--</option>
+            <option value="Male" >Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+            </div>
+          </section>
+          <section>
+             <button id="continuebtn" onclick="validate()" type="submit">continue purchase</button>
+          </section>
+      
+            <!--help center-->
+            <section class="helpcen">
+              <button class="show-modal"> <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                  <i class="fa-solid fa-headset"></i>
+                  
+                </div>
+              </div>
+              <div class="text"><a href="./contact.html">chat</a></div></button>
+      
+        <!-- Link to the telephone-input JavaScript file -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+        <script src="./details.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Font Awesome CDN-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./paycard.css" type="text/css">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>payment</title>
+</head>
+<body>
+  
+<div class="container">
+    <div class="title">
+        <h4>Select a <span style="color: #6064b6">Payment</span> method</h4>
+    </div>
+
+    <form action="#">
+        <input type="radio" name="payment" id="visa">
+        <input type="radio" name="payment" id="mastercard">
+        <input type="radio" name="payment" id="paypal">
+        <input type="radio" name="payment" id="AMEX">
+
+
+        <div class="category">
+            <label for="visa" class="visaMethod">
+                <a href="./forum.html"><div class="imgName">
+                    <div class="imgContainer visa" >
+                        <img src="https://i.ibb.co/vjQCN4y/Visa-Card.png" alt="visacard">
+                    </div>
+                    <span class="name">VISA</span>
+                </div></a>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+
+            <label for="mastercard" class="mastercardMethod">
+                <a href="./forum.html"><div class="imgName">
+                    <div class="imgContainer mastercard">
+                        <img src="https://i.ibb.co/vdbBkgT/mastercard.jpg" alt="mastercard">
+                    </div>
+                    <span class="name">Mastercard</span>
+                </div></a>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+
+            <label for="paypal" class="paypalMethod">
+                <a href="./forum.html"><div class="imgName">
+                    <div class="imgContainer paypal">
+                        <img src="https://i.ibb.co/KVF3mr1/paypal.png" alt="paypalcard">
+                    </div>
+                    <span class="name">Paypal</span>
+                </div></a>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+
+            <label for="AMEX" class="amexMethod">
+                <a href="./forum.html"><div class="imgName">
+                    <div class="imgContainer AMEX">
+                        <img src="https://i.ibb.co/wQnrX86/American-Express.jpg" alt="amexcard">
+                    </div>
+                    <span class="name">AMEX</span>
+                </div></a>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+        </div>
+    </form>
+</div>
+</body>
+</html>
